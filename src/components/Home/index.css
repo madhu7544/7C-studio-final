@@ -1,0 +1,11 @@
+.con {
+  display: flex;
+}
+.logo {
+  width: 200px;
+  margin-left: 63px;
+}
+.hr-line {
+  margin-left: 40px;
+  margin-right: 40px;
+}

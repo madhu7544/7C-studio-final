@@ -1,0 +1,44 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 400px;
+}
+.side {
+  margin-left: 80px;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.line {
+  height: 300px;
+}
+.user-icon {
+  width: 200px;
+}
+.useradd {
+  width: 100px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+.side-head {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.greenColor {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px;
+}
+.add-content {
+  width: 800px;
+}

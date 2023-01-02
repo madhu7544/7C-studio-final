@@ -1,0 +1,54 @@
+.settings_main {
+  padding-left: 5%;
+  position: relative;
+}
+.add-user-btn {
+  height: 40px;
+  width: 150px;
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+}
+.user-table {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+  font-size: 16px;
+  background-color: grey;
+  border-radius: 15px;
+}
+.settings_main thead > td {
+  width: 100px;
+  height: 50px;
+  background-color: darkgrey;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.settings_main td {
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  border: grey;
+  border-width: thin;
+  background-color: white;
+  text-align: center;
+}
+
+.delete-icon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 20px;
+}
+.table-row {
+  border: solid black;
+}

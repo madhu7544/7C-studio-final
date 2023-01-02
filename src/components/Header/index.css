@@ -1,0 +1,30 @@
+.header {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.header img {
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+.main {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.header_small {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.header h3 {
+  margin-left: 10px;
+}
+.header h2 {
+  font-size: 20px;
+  padding-left: 20px;
+}
