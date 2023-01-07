@@ -1,21 +1,27 @@
 import {Component} from 'react'
-
+import {v4} from 'uuid'
 import './index.css'
 
 class AddUserPopUp extends Component {
   state = {
-    id: 1,
     email: '',
-    role: '',
+    role: 'Admin',
+    close: true,
+    id: 1,
   }
 
   addUser = () => {
-    const {id, email, role} = this.state
+    const {id, email, role, uuid} = this.state
+    const uu = v4()
     let arr = JSON.parse(localStorage.getItem('Users')) || []
-    const obj = {id: arr.length, email, role}
+    const d = new Date()
+    const minutes = d.getMinutes()
+    const hour = d.getHours()
+    const obj = {id: arr.length, email, role, minutes, hour, uuid}
     arr = [...arr, obj]
     localStorage.setItem('Users', JSON.stringify(arr))
-    this.setState({id: arr.length})
+    this.setState({id: arr.length, uuid: uu})
+    console.log(uuid)
     console.log(id)
   }
 
@@ -27,8 +33,13 @@ class AddUserPopUp extends Component {
     this.setState({role: event.target.value})
   }
 
+  onClose = () => {
+    this.setState({close: false})
+  }
+
   render() {
-    return (
+    const {close} = this.state
+    return close ? (
       <div className="popup-container">
         <div className="img-content">
           <img
@@ -68,7 +79,7 @@ class AddUserPopUp extends Component {
               <option value="Management">Management</option>
             </select>
             <div className="button-container">
-              <button type="button" className="cancel">
+              <button type="button" className="cancel" onClick={this.onClose}>
                 Cancel
               </button>
               <button type="submit" className="add">
@@ -78,6 +89,8 @@ class AddUserPopUp extends Component {
           </form>
         </div>
       </div>
+    ) : (
+      ''
     )
   }
 }

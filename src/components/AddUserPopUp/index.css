@@ -5,19 +5,24 @@
   border: 1px solid gray;
   padding: 10px;
   border-radius: 10px;
-  background-color: pink;
+  background-color: darkorchid;
 }
 .img-content {
   display: flex;
   flex-direction: column;
   width: 300px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 .user-add {
   width: 100px;
+  color: white;
 }
 .desc {
   font-size: 12px;
+  font-family: 'Roboto';
 }
 .add-content-container {
   background-color: white;

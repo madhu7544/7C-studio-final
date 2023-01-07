@@ -1,11 +1,17 @@
+.hello-container {
+  max-width: 1200px;
+}
+
 .con {
   display: flex;
+  max-width: 1200px;
 }
 .logo {
-  width: 200px;
+  width: 150px;
   margin-left: 63px;
 }
 .hr-line {
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 0px;
 }

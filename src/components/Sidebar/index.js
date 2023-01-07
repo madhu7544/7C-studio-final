@@ -1,6 +1,7 @@
 import {Component} from 'react'
 
 import Popup from 'reactjs-popup'
+import 'reactjs-popup/dist/index.css'
 
 import './index.css'
 import AddUserPopup from '../AddUserPopUp'
@@ -121,7 +122,7 @@ class Sidebar extends Component {
                 Customers
               </button>
             }
-            position="right"
+            position="right center"
           >
             <h1>Customers</h1>
           </Popup>
@@ -166,8 +167,7 @@ class Sidebar extends Component {
                 Settings
               </button>
             }
-            position="right"
-            className="add-content"
+            position="right center"
           >
             <AddUserPopup />
           </Popup>

@@ -11,14 +11,13 @@
   border-radius: 15px;
   cursor: pointer;
   border: none;
+  font-family: 'Roboto';
 }
 .user-table {
   margin-top: 10px;
-  height: 300px;
   width: 100%;
   font-size: 16px;
   background-color: grey;
-  border-radius: 15px;
 }
 .settings_main thead > td {
   width: 100px;
@@ -28,8 +27,20 @@
   color: black;
   font-weight: bold;
   text-align: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+}
+.settings_main thead > div > td {
+  width: 100px;
+  height: 50px;
+  background-color: darkgrey;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.td-icons-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .settings_main td {
   width: 150px;
@@ -51,4 +62,9 @@
 }
 .table-row {
   border: solid black;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
 }

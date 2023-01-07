@@ -7,8 +7,11 @@ dependencies:
   jest-styled-components: 7.0.5_styled-components@5.3.0
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
+  react-icons: 4.7.1_react@17.0.1
+  react-paginate: 8.1.4_react@17.0.1
   reactjs-popup: 2.0.5_react-dom@17.0.1+react@17.0.1
   styled-components: 5.3.0_react-dom@17.0.1+react@17.0.1
+  uuid: 9.0.0
 devDependencies:
   babel-plugin-styled-components: 1.13.2_styled-components@5.3.0
   eslint-config-airbnb: 18.2.1
@@ -11244,7 +11247,6 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
-    dev: true
     resolution:
       integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
   /proxy-addr/2.0.7:
@@ -11458,6 +11460,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-/6UZ2qgEyH2aqzYZgQPxEnz33NJ2gNsnHA2o5+o4wW9bLM/JYQitNP9xPhsXwC08hMMovfGe/8retsdDsczPRg==
+  /react-icons/4.7.1_react@17.0.1:
+    dependencies:
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: '*'
+    resolution:
+      integrity: sha512-yHd3oKGMgm7zxo3EA7H2n7vxSoiGmHk5t6Ou4bXsfcgWyhfDKMpyKfhHR6Bjnn63c+YXBLBPUql9H4wPJM6sXw==
   /react-is/16.13.1:
     resolution:
       integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -11468,6 +11478,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+  /react-paginate/8.1.4_react@17.0.1:
+    dependencies:
+      prop-types: 15.8.1
+      react: 17.0.1
+    dev: false
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+    resolution:
+      integrity: sha512-c3rxjcTEqeDQa6LqXifxLeFguY2qy2CHGRphVjHLFFMGfIHyaJ+v3bOvIlLYEeohwQ1q+cQpknjsqBVrkc/SNA==
   /react-refresh/0.8.3:
     dev: true
     engines:
@@ -13517,6 +13536,11 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
+  /uuid/9.0.0:
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==
   /v8-compile-cache/2.3.0:
     dev: true
     resolution:
@@ -14149,6 +14173,9 @@ specifiers:
   prettier: 2.2.1
   react: 17.0.1
   react-dom: 17.0.1
+  react-icons: 4.7.1
+  react-paginate: 8.1.4
   react-scripts: 4.0.3
   reactjs-popup: 2.0.5
   styled-components: 5.3.0
+  uuid: 9.0.0
